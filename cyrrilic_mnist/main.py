@@ -2,7 +2,7 @@ from pathlib import Path
 import torch
 from torch.utils.data import DataLoader
 from torchvision import transforms
-from test import CyrillicCNN, CyrrilicDataset, get_data_info
+from train_model import CyrillicCNN, CyrrilicDataset, get_data_info
 
 
     
