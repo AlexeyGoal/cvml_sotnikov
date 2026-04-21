@@ -2,8 +2,8 @@ import cv2
 from ultralytics import YOLO
 from pathlib import Path
 
-root = Path(__file__).parent / "best.pt"
-model = YOLO(str(root))
+path = Path(__file__).parent / "runs" / "detect" / "figures" / "yolo" / "weights" / "best.pt"
+model = YOLO(str(path))
 camera = cv2.VideoCapture(0)
 classes = {0: 'cube', 1: 'neither', 2: 'sphere'}
 
