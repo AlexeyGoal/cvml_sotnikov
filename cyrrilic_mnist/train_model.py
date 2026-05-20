@@ -130,7 +130,7 @@ if __name__ == "__main__":
     
     path = Path(__file__).parent
     data_path = path / "Cyrillic"  
-    model_path = path / "model_test.pth"
+    model_path = path / "model.pth"
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"{device=}")
